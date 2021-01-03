@@ -56,8 +56,10 @@ table {
     src: url('./scriptina.regular.ttf') format('truetype');
 }
 
+
 * {
-    margin: 0;
+     box-sizing: border-box;
+     margin: 0;
     padding: 0;
  }
  a {
@@ -66,31 +68,25 @@ table {
  
  .container {
     max-width: 1260px;
-    margin: 0 auto;
-    width: 100%;
- }
-@media (max-width:1260px) {
-    .container{
-        max-width: 970px;
+    margin: 0 auto;}
+    @media (max-width: 1260px;){
+        .container {
+            max-width: 970px;
+        }
     }
-}
-.@media (max-width:992px) {
-    .container{
-        max-width: 750px;
+    @media (max-width: 992px;){
+        .container {
+            max-width: 750px;
+        }
     }
-}
-@media (max-width:767px) {
-    .container{
-        max-width: none;
+    @media (max-width: 768px;){
+        .container {
+            max-width: none;
+        }
     }
-}
-
 
 
  /*SECTION_HEADER*/
-
-
-
 
 
 .header {
@@ -103,6 +99,7 @@ table {
      position: fixed;
      z-index: 1000;
 }
+
 .header__logo {
     font-size: 50px;
     font-family: 'Scriptina', sans-serif;
@@ -122,6 +119,7 @@ table {
     justify-content: center;
     min-width: 1120px;
 }
+
 .nav__link {
     color: #fff;
     font-size: 14px;
@@ -130,6 +128,8 @@ table {
     text-transform: uppercase;
     margin: 30px 20px;
 }
+
+
 .logo__twitter {
     color: #fff;
     font-size: 16px;
@@ -163,6 +163,7 @@ table {
 .banner {
     background: url(./image/header.jpg) no-repeat center;
     background-size: cover;
+    min-width: 1260px;
   }
  .banner__content {
     min-height: 900px;
@@ -250,6 +251,7 @@ table {
  .art__of__cakes {
     background: url(./image/texture.jpg) no-repeat center;
     height: 760px;
+    min-width: 1260px;
     background-size: cover;
  }
 
@@ -365,18 +367,23 @@ table {
 .pancakes {
     background: url(./image/pancakes_perfect.jpg) no-repeat center;
     height: 760px;
+    min-width: 1260px;
     background-size: cover;
 }
 
-    #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+.owl-item {
+    border: 5px solid black;
+    height: 200px;
+    border-radius: 15px;
 }
 
 
-
-
+.owl-dots button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: blueviolet;
+}
 
 
 /*SECTION_BREAKFAST*/
@@ -389,6 +396,7 @@ table {
 .breakfast {
     background: url(./image/breakfast.jpg) no-repeat center;
     height: 760px;
+    min-width: 1260px;
     background-size: cover;
 }
 .breakfast__content {
@@ -501,7 +509,7 @@ table {
     height: 270px;
     width: 380px;
     top: 370px;
-    left: 270px;
+    left: 130px;
 }
 .breakfast__sheet__head::before {
     content: "";
@@ -585,7 +593,7 @@ table {
 .recipes {
     background-color: #f3f1e9;
     height: 950px;
-    width: 100%;
+    min-width: 1260px;
 }
 .recipes__title::before {
     content: "";
@@ -726,7 +734,7 @@ table {
 .footer {
     background-color: #f3f1e9;
     height: 210px;
-    background-size: 100%;
+    min-width: 1260px;
 }
 .footer__menu {
     display: flex;
